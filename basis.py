@@ -15,8 +15,7 @@ def get_base_matrix(a, k, base):
 def create_bernstein_matrix(a, k):
     n = a.size(0)
     V = torch.zeros(n, k, dtype=a.dtype, device=a.device)
-
-    # Map [-1, 1] -> [0, 1]
+    
     t = (a + 1) * 0.5
 
     j = torch.arange(k, device=a.device, dtype=a.dtype)
