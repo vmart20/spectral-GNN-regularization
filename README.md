@@ -1,6 +1,16 @@
 ## Overview
 Official code for the AISTATS 2026 paper: **"Generalization Bounds for Spectral GNNs via Fourier Domain Analysis"**.
 
+### Before cloning the repository (Requires Git LFS)
+
+This repository uses [Git LFS](https://git-lfs.com/) (Large File Storage) to handle the dataset files. You must have Git LFS installed before cloning.
+
+```bash
+# Install LFS (Ubuntu/Debian)
+sudo apt-get install git-lfs
+git lfs install
+git clone https://github.com/vmart20/spectral-GNN-regularization.git
+```
 
 ## Regulariser
 To run the main node classification experiments on the benchmark datasets (Cora, Citeseer, Chameleon, Squirrel) with the energy-weighted regularizer:
